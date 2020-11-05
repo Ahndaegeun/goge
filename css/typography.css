@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;700&display=swap');
+
+body * {
+    font-family: 'Mitr', sans-serif;
+}
+
+/* Font-Weight */
+.black {
+    font-weight: bold;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+/* Font-size */
+.hero {
+    font-size: 44px;
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.hero-body {
+    font-size: 18px;
+}
+
+.heading-body {
+    font-size: 14px;
+}
+
+/* Color */
+.gradient {
+    background: linear-gradient(to right,#FF8A00, #FFC000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.solid-orange {
+    color: #FF8A00;
+}
+
+.solid-gray {
+    color: #5C5C5C;
+}

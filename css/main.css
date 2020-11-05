@@ -1,0 +1,92 @@
+a { text-decoration: none; }
+
+/* Button */
+.btn {
+    background: linear-gradient(to right, #FF8A00, #FFC000);
+    display: block;
+    padding: 20px 27px;
+    width: 160px;
+    text-align: center;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.btn--revers {
+    background: #fff;
+    color: #FFC000;
+}
+
+/* Clear-fix */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* HEADER */
+header {
+    width: 1500px;
+    padding: 29px 81px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+header h1 {
+    float: left;
+}
+
+header h1 {
+    text-indent: -9999px;
+}
+
+header h1 a {
+    display: flex;
+    align-items: center;
+}
+
+header h1 a::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 38px;
+    background: url("../assets/Logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li [class^="gradient"] {
+    margin-right: 56px;
+}
+
+header nav ul li:nth-child(6) {
+    text-indent: -9999px;
+}
+
+header nav ul .cart-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+header nav ul .cart-icon::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 28px;
+    background: url("../assets/Cart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header nav ul .btn:first-child {
+    margin-right: 10px;
+}
