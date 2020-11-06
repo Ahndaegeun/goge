@@ -65,6 +65,18 @@ header nav ul {
 
 header nav ul li [class^="gradient"] {
     margin-right: 56px;
+    position: relative;
+}
+
+header nav ul li [class^="gradient"]:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    margin-top: 8px;
+    background: linear-gradient(to right,#FF8A00, #FFC000);
+    border-radius: 15px;
 }
 
 header nav ul li:nth-child(6) {
@@ -90,3 +102,80 @@ header nav ul .cart-icon::after {
 header nav ul .btn:first-child {
     margin-right: 10px;
 }
+
+/* Title */
+.section-title .inner {
+    width: 100%;
+    padding: 0 300px;
+    background: linear-gradient(to right, #FF8A00, #FFC000);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.section-title .inner::after {
+    content: "";
+    display: block;
+    width: 426px;
+    height: 382px;
+    position: absolute;
+    right: 40%;
+    top: -15px;
+    background: url("../assets/Isolated\ Image\ Icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-title .inner .summary {
+    width: 50%;
+    color: #fff;
+    margin-top: 130px;
+}
+
+.section-title .inner .summary__title {
+    line-height: 1.5;
+    margin-bottom: 26px;
+}
+
+.section-title .inner .summary__description {
+    line-height: 2;
+    width: 30em;
+    margin-bottom: 19px;
+}
+
+.section-title .inner a.btn {
+    margin-bottom: 52px;
+}
+
+.section-title .btn-group {
+    display: flex;
+    margin-bottom: 103px;
+}
+
+.section-title .inner .btn-group .prev-btn {
+    display: block;
+    outline: none;
+    border: none;
+    text-indent: -9999px;
+    width: 31px;
+    height: 31px;
+    background: url("../assets/prev.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.section-title .inner .btn-group .next-btn {
+    display: block;
+    outline: none;
+    border: none;
+    text-indent: -9999px;
+    width: 50px;
+    height: 50px;
+    background: url("../assets/next.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
