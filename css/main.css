@@ -105,8 +105,8 @@ header nav ul .btn:first-child {
 
 /* Title */
 .section-title .inner {
-    width: 100%;
-    padding: 0 300px;
+    width: 80vw;
+    padding: 0 183px;
     background: linear-gradient(to right, #FF8A00, #FFC000);
     display: flex;
     flex-direction: column;
@@ -120,7 +120,7 @@ header nav ul .btn:first-child {
     width: 426px;
     height: 382px;
     position: absolute;
-    right: 40%;
+    right: 10%;
     top: -15px;
     background: url("../assets/Isolated\ Image\ Icon.png");
     background-repeat: no-repeat;
@@ -177,5 +177,175 @@ header nav ul .btn:first-child {
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
+}
+
+/* Main */
+.section-main .inner {
+    background: #FFF7DF;
+    padding: 150px 226px 134px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-main .inner::before {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 836px;
+    background: url(../assets/Image\ Placeholder.png);
+    background-size: cover;
+    position: absolute;
+    bottom: -150px;
+    left: -300px;
+}
+
+.section-main .inner .whatido {
+    width: 936px;
+    margin: 0 auto 222px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+
+.section-main .inner .whatido .summary {
+    text-align: center;
+}
+
+.section-main .inner .whatido img {
+    margin-bottom: 30px;
+}
+
+.section-main .inner .whatido .summary__title {
+    margin-bottom: 20px;
+}
+
+.section-main .inner .skills {
+    text-align: left;
+    width: 500px;
+    float: right;
+    position: relative;
+}
+
+.section-main .inner .skills .summary__title {
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+.section-main .inner .skills .summary__description {
+    margin-bottom: 15px;
+    line-height: 1.25;
+    letter-spacing: 2px;
+}
+
+/* Contents */
+.section-contents .inner {
+    padding: 76px 130px 74px;
+    background: linear-gradient(to right,#FF8A00, #FFC000);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section-contents .inner::before {
+    content: "";
+    display: block;
+    width: 567px;
+    height: 777px;
+    background: url("../assets/Group\ 255.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+
+.section-contents .inner .summary {
+    width: 400px;
+    color: #fff;
+    margin-right: 150px;
+}
+
+.section-contents .inner .summary__title {
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.section-contents .inner .summary__descriptoin {
+    line-height: 2;
+    letter-spacing: 1px;
+    margin-bottom: 34px;
+}
+
+.section-contents .inner .video-group {
+    width: 800px;
+    height: 676px;
+    position: relative;
+}
+
+.section-contents .inner .video-group [class^="video"] {
+    position: absolute;
+}
+
+.section-contents .inner .video-group .video1 {
+    width: 280px;
+    height: 220px;
+    background: #000;
+    border-radius: 10px;
+    top: 0;
+    right: 20px;
+}
+
+.section-contents .inner .video-group .video2 {
+    width: 158px;
+    height: 219px;
+    background: #000;
+    border-radius: 10px;
+    top: 50%;
+    left: 0;
+}
+
+.section-contents .inner .video-group .video3 {
+    width: 282px;
+    height: 263px;
+    background: #000;
+    border-radius: 10px;
+    top: 20%;
+    left: 180px;
+}
+
+.section-contents .inner .video-group .video4 {
+    width: 100px;
+    height: 140px;
+    background: #000;
+    border-radius: 10px;
+    top: 35%;
+    right: 210px;
+}
+
+.section-contents .inner .video-group .video5 {
+    width: 203px;
+    height: 280px;
+    background: #000;
+    border-radius: 10px;
+    top: 45%;
+    right: 0;
+}
+
+.section-contents .inner .video-group .video6 {
+    width: 100px;
+    height: 140px;
+    background: #000;
+    border-radius: 10px;
+    bottom: 10%;
+    left: 180px;
+}
+
+.section-contents .inner .video-group .video7 {
+    width: 282px;
+    height: 263px;
+    background: #000;
+    border-radius: 10px;
+    bottom: 0;
+    left: 38%;
 }
 
